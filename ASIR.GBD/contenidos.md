@@ -8,14 +8,12 @@
  * Ventajas de los SGBD frente a los sistemas de ficheros tradicionales.
 
 ## Diseño lógico de bases de datos:
-#### ~~Modelo E/R~~
  * Modelo de datos. Concepto y tipos. El proceso de diseño de una base de datos.
  * El modelo E/R. Concepto, tipos, elementos y representación. Diagramas E/R.
- #### ~~Modelo relacional~~
- * El modelo Relacional. Concepto, elementos y representación. Diagramas Relacionales.
- #### ~~Paso a tablas. Normalizacion~~
- * Paso del modelo E/R al modelo relacional. Transformación de diagramas. Normalización.
- * Revisión del diseño, desnormalización y otras decisiones no derivadas del proceso de diseño, identificación, justificación y documentación.
+***
+ * El modelo relacional. Concepto, elementos y representación. Diagramas Relacionales.
+* Paso del modelo E/R al modelo relacional. Transformación de diagramas. Normalización.
+* Revisión del diseño, desnormalización y otras decisiones no derivadas del proceso de diseño, identificación, justificación y documentación.
 
 ## Diseño físico de bases de datos:
  * El proceso de diseño físico, concepto y transición desde el diseño lógico. Estructuras físicas de almacenamiento.
@@ -29,10 +27,10 @@
  * Diccionario de datos, definición y documentación.
 
 ## Realización de consultas:
-#### ~~Consultas simples~~
+####
  * El lenguaje de manipulación de datos para la realización de consultas. La sentencia SELECT.
  * Consultas simples, de resumen y agrupación.
- #### ~~Clausulas avanzadas de seleccion~~
+***
  * Subconsultas.
  * Unión de consultas.
  * Composiciones internas y externas.
@@ -40,28 +38,26 @@
  * Ventajas e inconvenientes de las distintas opciones válidas para llevar a cabo una consulta determinada.
 
 ## Modificación de información almacenada:
-#### ~~Insert, Delete, Update~~
  * Edición de los datos.
  * Sentencias para modificar el contenido de la base de datos, INSERT, DELETE y UPDATE.
  * Subconsultas y combinaciones en órdenes de edición.
  * Herramientas gráficas proporcionadas por el sistema gestor para la edición de la información.
- #### ~~Transacción. Bloqueo~~
+***
  * Transacción. Concepto, sentencias de procesamiento de transacciones.
  * Acceso simultáneo a los datos, concepto de bloqueo y políticas de ejecución.
- #### ~~Construccion de guiones~~
+ ***
  * Construcción de guiones.
- * Guión. Concepto y tipos.
- * Lenguajes de programación, metodologías, estructuras de control y estructuras de agrupación, tipos de datos, identificadores, variables y operadores.
- * Herramientas de codificación, depuración y prueba de guiones.
+    * Guión. Concepto y tipos.
+    * Lenguajes de programación, metodologías, estructuras de control y estructuras de agrupación, tipos de datos, identificadores, variables y operadores.
+    * Herramientas de codificación, depuración y prueba de guiones.
+***
+* TBC: Triggers y Eventos
 
 ## Gestión de la seguridad de los datos:
- #### ~~Copias de seguridad~~
- * Seguridad de la información, repaso de conceptos fundamentales para bases de datos.
+ * <u>Seguridad de la información</u>, repaso de conceptos fundamentales para bases de datos.
+  * Interpretación de la información suministrada por los mensajes de error y los <u>ficheros de registro</u>, recuperación de fallos.
+***
  * Copias de seguridad, realización y restauración. Sentencias, herramientas gráficas y utilidades proporcionadas por los sistemas gestores para su realización.
- * Interpretación de la información suministrada por los mensajes de error y los ficheros de registro, recuperación de fallos.
-  #### ~~Importar/exportar datos~~
+***
  * Importación y exportación de datos. Concepto, sentenecias, herramientas gráficas y utilidades proporcionadas por los sistemas gestores para su realización.
  * Transferencia de datos entre sistemas gestores. Concepto, estrategias, sentencias, herramientas gráficas y utilidades proporcionadas por los sistemas gestores para su realización.
-
-
- https://gestionbasesdatos.readthedocs.io/es/latest/

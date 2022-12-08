@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://ubriquejazz.github.io/U402/" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>Clausulas avanzadas - PD2023</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Clausulas avanzadas";
+        var mkdocs_page_input_path = "U402.md";
+        var mkdocs_page_url = "/U402/";
+      </script>
+    
+    <script src="../js/jquery-3.6.0.min.js" defer></script>
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> PD2023
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../U101/">Elementos de las BDs</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../U201/">Modelo E/R extendido</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../U202/">M.relacional. Normalizacion</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../U301/">Diseno fisico. Lenguaje SQL</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../U401/">Consultas sencillas</a>
+                </li>
+              </ul>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="./">Clausulas avanzadas</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#contenidos">Contenidos</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#practica-11-consultas-con-funciones-colectivas">Práctica 11: Consultas con funciones colectivas</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#practica-12-agrupamiento-de-filas-group-by">Práctica 12: Agrupamiento de filas. GROUP BY</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#practica-14-consultas-sobre-varias-tablas">Práctica 14: Consultas sobre varias tablas</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#practica-15-vistas">Práctica 15: Vistas</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#practica-16-repaso">Práctica 16: Repaso</a>
+    </li>
+    </ul>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../U501/">Insert/Update/Delete</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../U502/">Transacciones. Bloqueos</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../U503/">Introduccion al PL/SQL</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../U504/">Eventos y Triggers</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../U601/">Seguridad de datos</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../U602/">Copias de seguridad</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../U603/">Importar y exportar</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../about/">About</a>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">PD2023</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" alt="Docs"></a> &raquo;</li>
+      <li>Clausulas avanzadas</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="clausulas-avanzadas-de-seleccion">CLAUSULAS AVANZADAS DE SELECCION</h1>
+<h2 id="contenidos">Contenidos</h2>
+<pre><code>4.4. SUBCONSULTAS
+4.7. AGRUPACIONES
+    4.7.1. Funciones de cálculo con grupo (o funciones colectivas)
+    4.7.2. Condiciones HAVING
+
+4.8. OBTENER DATOS DE MÚLTIPLES TABLAS
+    4.8.1. Producto cruzado o cartesiano de tablas
+    4.8.2. Asociando tablas
+    4.8.3. Relaciones sin igualdad
+    4.8.4. Combinación de tablas (JOIN)
+
+4.9. COMBINACIONES ESPECIALES
+    4.9.1. Uniones
+    4.9.2. Intersecciones
+    4.9.3. Diferencia
+
+4.10. CONSULTA DE VISTAS
+</code></pre>
+<h2 id="practica-11-consultas-con-funciones-colectivas">Práctica 11: Consultas con funciones colectivas</h2>
+<ol>
+<li>Hallar el salario medio, mínimo y máximo de los empleados de la empresa.</li>
+</ol>
+<h2 id="practica-12-agrupamiento-de-filas-group-by">Práctica 12: Agrupamiento de filas. GROUP BY</h2>
+<ol>
+<li>Hallar cuántos empleados hay en cada departamento.</li>
+</ol>
+<h2 id="practica-14-consultas-sobre-varias-tablas">Práctica 14: Consultas sobre varias tablas</h2>
+<ol>
+<li>Para cada departamento con presupuesto inferior a 35.000 €, hallar le nombre del Centro donde está ubicado y el máximo salario de sus empleados (si dicho máximo excede de 1.500 €). Clasificar alfabéticamente por nombre de departamento.</li>
+</ol>
+<h2 id="practica-15-vistas">Práctica 15: Vistas</h2>
+<ol>
+<li>Crear una vista con todos los empleados del departamento 111 en donde figuren solo el número de empleado, su nombre, su salario y la comisión. La llamarás VISTA1.</li>
+<li>Crear una vista que obtenga el máximo valor de la suma de los salarios de los departamentos. Se llamará VISTA2.</li>
+<li>Utilizar la vista anterior para obtener el departamento con más gasto en salario.</li>
+</ol>
+<h2 id="practica-16-repaso">Práctica 16: Repaso</h2>
+<p>Selecciona, por orden alfabético decreciente, el nombre de los empleados junto con su salario aumentado un 1%, para aquellos empleados del departamento 100 que en la fecha de su contratación tenían más de 20 años.</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../U401/" class="btn btn-neutral float-left" title="Consultas sencillas"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../U501/" class="btn btn-neutral float-right" title="Insert/Update/Delete">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../U401/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../U501/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme_extra.js" defer></script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://ubriquejazz.github.io/U301/" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>Diseno fisico. Lenguaje SQL - PD2023</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Diseno fisico. Lenguaje SQL";
+        var mkdocs_page_input_path = "U301.md";
+        var mkdocs_page_url = "/U301/";
+      </script>
+    
+    <script src="../js/jquery-3.6.0.min.js" defer></script>
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> PD2023
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../U101/">Elementos de las BDs</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../U201/">Modelo E/R extendido</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../U202/">M.relacional. Normalizacion</a>
+                </li>
+              </ul>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="./">Diseno fisico. Lenguaje SQL</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#contenido">Contenido</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#practica-1">Práctica 1</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#practica-2">Práctica 2</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#practica-3">Práctica 3</a>
+    </li>
+    </ul>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../U401/">Consultas sencillas</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../U402/">Clausulas avanzadas</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../U501/">Insert/Update/Delete</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../U502/">Transacciones. Bloqueos</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../U503/">Introduccion al PL/SQL</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../U504/">Eventos y Triggers</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../U601/">Seguridad de datos</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../U602/">Copias de seguridad</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../U603/">Importar y exportar</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../about/">About</a>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">PD2023</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" alt="Docs"></a> &raquo;</li>
+      <li>Diseno fisico. Lenguaje SQL</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="diseno-fisico-lenguaje-de-definicion-de-datos">DISEÑO FÍSICO. LENGUAJE DE DEFINICIÓN DE DATOS</h1>
+<h2 id="contenido">Contenido</h2>
+<pre><code>3.1. INTRODUCCIÓN
+
+3.2. EL LENGUAJE SQL
+    3.2.1. Historia
+    3.2.2. Proceso de ejecución de sentencia SQL
+    3.2.3. Criterios de notación
+    3.2.4. Normas de escritura
+
+3.3. LENGUAJE DE DEFINICIÓN DE DATOS: DDL
+    3.3.1. Tipos de datos y conversión entre tipos
+    3.3.2. Expresiones y operadores condicionales
+    3.3.3. CRUD de bases de datos
+    3.3.4. CRUD de esquemas
+    3.3.5. CRUD de tablas
+    3.3.6. CRUD de vistas
+    3.3.7. CRUD de índices
+    3.3.8. CRUD de secuencias
+    3.3.9. CRUD de sinónimos
+</code></pre>
+<h2 id="practica-1">Práctica 1</h2>
+<ul>
+<li>
+<p>OBJETIVO: Realizar el diseño físico de bases de datos utilizando asistentes, herramientas gráficas y el lenguaje de definición de datos.</p>
+</li>
+<li>
+<p>ENUNCIADO: Dado el siguiente esquema E/R:</p>
+<ol>
+<li>Obtén el esquema relacional correspondiente.</li>
+<li>Comprueba que está en 3FN.</li>
+<li>
+<p>Crea las tablas procurando que las columnas tengan el tipo y tamaño adecuado y con las siguientes restricciones:</p>
+<ol>
+<li>Todas las claves primarias, ajenas y candidatas.</li>
+<li>No hay partidos en verano (desde el 21/06 al 21/09)</li>
+<li>Los partidos no pueden durar más de 100 minutos incluyendo el descuento.</li>
+<li>La posición de un jugador puede ser Portero, Defensa, Centrocampista o Delantero.</li>
+<li>Los jugadores han de tener como mínimo 16 años en el momento en que se dan de alta en la base de datos.</li>
+<li>Si no se sabe el aforo de un estadio, se guardará un 0 por defecto.</li>
+<li>La fecha de un partido es un campo obligatorio.</li>
+<li>Un partido se juega entre un EquipoLocal y EquipoVisitante (no pueden ser el mismo equipo.</li>
+</ol>
+</li>
+<li>
+<p>Una vez creadas las tablas:</p>
+<ol>
+<li>Añade una columna NumTitulos a la tabla Equipos.</li>
+<li>Elimina la columna Ciudad.</li>
+<li>Añade la restricción: Todos los equipos se han fundado después del año1890.</li>
+<li>Añade la restricción: La hora de comienzo de los partidos estará entre las 12:00 y las 22:00 horas.</li>
+</ol>
+</li>
+</ol>
+</li>
+</ul>
+<h2 id="practica-2">Práctica 2</h2>
+<ul>
+<li>
+<p>OBJETIVO: Realizar el diseño físico de bases de datos utilizando asistentes, herramientas gráficas y el lenguaje de definición de datos.</p>
+</li>
+<li>
+<p>ENUNCIADO: Dado el siguiente esquema E/R:</p>
+<ol>
+<li>Obtén el esquema relacional correspondiente.</li>
+<li>Comprueba que está en 3FN.</li>
+<li>
+<p>Crea las tablas procurando que las columnas tengan el tipo y tamaño adecuado y con las siguientes restricciones:</p>
+<ol>
+<li>El Color de los coches es verde, rojo o azul.</li>
+<li>La matrícula está formada por cuatro números y tres letras.</li>
+<li>Los DNI terminan en letra.</li>
+<li>Las Horas de mano de obra de una operación nunca pasan de 10.</li>
+<li>Señala todas las claves primarias, ajenas y candidatas.</li>
+<li>La cantidad de Piezas por Operación por defecto es 1.</li>
+<li>La marca y modelo del coche no pueden dejarse en blanco.</li>
+<li>Los teléfonos empiezan por 6 o por 9.</li>
+<li>El precio de un coche está entre 10000 y 40000.</li>
+</ol>
+</li>
+</ol>
+</li>
+</ul>
+<h2 id="practica-3">Práctica 3</h2>
+<ul>
+<li>
+<p>OBJETIVO: Realizar el diseño físico de bases de datos utilizando asistentes, herramientas gráficas y el lenguaje de definición de datos.</p>
+</li>
+<li>
+<p>ENUNCIADO: Dado el siguiente esquema relacional crear en Oracle el modelo físico, asignando nombre a las restricciones.</p>
+</li>
+</ul>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../U202/" class="btn btn-neutral float-left" title="M.relacional. Normalizacion"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../U401/" class="btn btn-neutral float-right" title="Consultas sencillas">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../U202/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../U401/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme_extra.js" defer></script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

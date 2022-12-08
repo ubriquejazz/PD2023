@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://ubriquejazz.github.io/U201/" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>Modelo E/R extendido - PD2023</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Modelo E/R extendido";
+        var mkdocs_page_input_path = "U201.md";
+        var mkdocs_page_url = "/U201/";
+      </script>
+    
+    <script src="../js/jquery-3.6.0.min.js" defer></script>
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> PD2023
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../U101/">Elementos de las BDs</a>
+                </li>
+              </ul>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="./">Modelo E/R extendido</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#contenido">Contenido</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#practica-1">PRÁCTICA 1</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#practica-2">PRÁCTICA 2</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#practica-3">PRÁCTICA 3</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#practica-4">PRÁCTICA 4</a>
+    </li>
+    </ul>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../U202/">M.relacional. Normalizacion</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../U301/">Diseno fisico. Lenguaje SQL</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../U401/">Consultas sencillas</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../U402/">Clausulas avanzadas</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../U501/">Insert/Update/Delete</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../U502/">Transacciones. Bloqueos</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../U503/">Introduccion al PL/SQL</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../U504/">Eventos y Triggers</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../U601/">Seguridad de datos</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../U602/">Copias de seguridad</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../U603/">Importar y exportar</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../about/">About</a>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">PD2023</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" alt="Docs"></a> &raquo;</li>
+      <li>Modelo E/R extendido</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="modelo-entidadrelacion-extendido">MODELO ENTIDAD/RELACIÓN EXTENDIDO</h1>
+<h2 id="contenido">Contenido</h2>
+<pre><code>2.1. DISEÑO DE BD
+    2.2.1. Fase de Análisis: Especificación de requisitos Software (E.R.S.)
+    2.2.2. Fase 1 del diseño. Diseño Conceptual: Modelo Entidad/Relación (E/R)
+    2.2.3. Fase 2 del diseño. Diseño Lógico: Modelo Relacional
+    2.2.4. Fase 3 del diseño. Diseño Físico: Modelo Físico
+
+2.3. MODELO ENTIDAD/RELACIÓN
+    2.3.1. Entidades
+    2.3.2. Atributos
+    2.3.3. Relaciones
+        1. El Rol de una entidad en una relación
+        2. La Cardinalidad de una relación
+        3. La Participación de una entidad
+        4. Atributos propios
+        5. Relaciones de dependencia: Entidades Fuertes y Entidades Débiles
+        6. Símbolos de exclusividad o inclusividad entre relaciones
+
+2.4. MODELO ENTIDAD/RELACIÓN EXTENDIDO
+    2.4.1. Jerarquía: Solapada o Exclusiva / Parcial o Total
+</code></pre>
+<h2 id="practica-1">PRÁCTICA 1</h2>
+<ul>
+<li>OBJETIVO: Aprender el uso básico del programa <strong>Dia</strong>, que utilizaremos para para realizar diagramas ER extendidos y relacionales.</li>
+<li>ENUNCIADO: Instala el programa Dia y la hoja de símbolos EER.zip para los símbolos utilizados en diagramas Entidad-Relación extendidos. </li>
+</ul>
+<p>Con la ayuda del profesor, examina la forma de uso de dicho programa. Para ello deberás seguir los siguientes pasos:
+1. Descarga de la plataforma Moodle el programa Dia.
+1. Procede a su instalación.
+1. Ejecutalo por primera vez para que se cree una subcarpeta .dia en tu directorio personal.
+1. Descarga el archivo EER.zip que contiene los símbolos necesarios para diagramas E/R extendidos: https://github.com/jamj2000/GestionBasesDatos/blob/master/Tema2/EER.zip
+1. Copia este archivo a la subcarpeta .dia y descomprímelo ahí.
+1. Se generará un nuevo archivo LICENSE y dos carpetas: shapes y sheets.
+1. Debajo de las herramientas, selecciona Otras hojas → EER.</p>
+<h2 id="practica-2">PRÁCTICA 2</h2>
+<ul>
+<li>OBJETIVO: Recordar todo lo visto  en el tema 1 ahora que ya somos capaces de crear diagramas que modelen la realidad de nuestro problemas.</li>
+<li>ENUNCIADO: Resuelve los apartados siguientes</li>
+</ul>
+<p>Con ayuda de el profesor y lo visto sobre el tema referente al modelo relacional deberás:</p>
+<ol>
+<li>
+<p>Realizar el paso a tablas de la cuestión 6.2.8.</p>
+<pre><code>ALUMNO (Núm_Matrícula, Nombre, FechaNacimiento, Teléfono)
+ASIGNATURA (Código_asignatura, Nombre)
+PROFESOR (Id_P, NIF_P, Nombre, Especialidad, Teléfono)
+</code></pre>
+</li>
+<li>
+<p>Crea la BD que resulta en Microsoft ACCESS o LibreOffice BASE eligiendo los tipos de datos y las restricciones.</p>
+</li>
+<li>Introduce 7 registros en la tabla ASIGNATURAS, 4 en la tabla PROFESORES y 15 en la tabla ALUMNOS. Además resultará una tabla MATRÍCULAS que deberás completar con el curso escolar en que cada alumno ha estado matriculado de cada asignatura. Asígnalos como estimes más oportuno. Recuerda que en cada asignatura habrá un mínimo de 10 alumnos.</li>
+<li>En la tabla PROFESORES mueva la columna TELEFONO a la izquierda de la columna ESPECIALIDAD. Pruebe otros movimientos.
+Oculte las columnas Fecha_nac y Tlfno de la tabla ALUMNOS. Vuelva a mostrarlas. Pruebe otras.</li>
+<li>Diseñar una consulta del tipo Eliminación capaz de eliminar de la tabla ALUMNOS solo aquellos registros comprendidos entre dos fechasNac límite que nos deberá preguntar cada vez que ejecutemos la consulta (Parametros).</li>
+<li>Crea una nueva consulta en la que muestres el no de matrícula, el nombre y la asignatura en la que está o ha estado matriculado cada alumno, incluyendo el curso de la matrícula.</li>
+<li>Crea un formulario para la consulta que hemos creado en el punto anterior. El formulario deberá ser de Tipo Tabular y con todos los campos de la consulta.</li>
+<li>Crea un informe para la consulta anterior. El informe será de tipo tabular con todos los campos de la consulta y deberá estar ordenado por NoMatrícula.</li>
+<li>Modifica el aspecto del titulo del formulario añadiendo colores, bordes y cambiando el tipo de letra.</li>
+</ol>
+<h2 id="practica-3">PRÁCTICA 3</h2>
+<ul>
+<li>OBJETIVO: Recordar todo lo visto en el tema 1 ahora que ya somos capaces de crear diagramas que modelen la realidad de nuestro problemas.</li>
+<li>
+<p>ENUNCIADO: Resuelve los apartados siguientes</p>
+<p>Con ayuda del profesor deberás:
+* Realizar el paso a tablas de la cuestión 6.2.10.
+* Crea la BD que resulta en Microsoft ACCESS eligiendo los tipos de datos y las restricciones.
+* Introduce registros en cada una de las tablas.
+* Inventa cinco consultas y ejecútalas.
+* Para una de las consultas anteriores Crea un formulario de tipo Tabular y modifica un poco su aspecto.
+* Para la misma consulta que hayas elegido en el apartado anterior, crea un informe de Tipo Tabular y con todos los campos de la consulta.</p>
+</li>
+</ul>
+<h2 id="practica-4">PRÁCTICA 4</h2>
+<ul>
+<li>OBJETIVO: Recordar todo lo visto  previamente y ampliarlo con lo nuevo aprendido en este tema.</li>
+<li>
+<p>ENUNCIADO: Resuelve los apartados siguientes</p>
+</li>
+<li>
+<p>Realizar el modelo Entidad-Relación para modelar la situación real siguiente:</p>
+<ul>
+<li>Queremos crear una base de datos para una empresa que fabrica y distribuye electrodomésticos. Debe contener información acerca de los departamentos, los empleados, los artículos, los clientes y los pedidos.</li>
+<li>De los departamentos queremos saber su código de identificación y el presupuesto medio con el que cuenta. Dicho presupuesto medio no podrá superar nunca los 60.000 €. Los departamentos se agrupan en sectores: Financiero, Productivo, Recursos Humanos y Ventas. De los departamentos financieros queremos saber también y su dirección y la entidad bancaria con la que trabajan. De los departamentos del sector productivo queremos conocer los artículos que fabrican.</li>
+<li>De los empleados guardaremos su NIF, nombre, dirección, fecha de nacimiento y departamento en el que trabajan. Cada empleado trabaja en un único departamento.</li>
+<li>De cada artículo: Número de artículo (único), nombre, Departamento que lo fabrica y existencias de ese artículo en cada departamento.</li>
+<li>Para cada cliente: Número de cliente (único), Direcciones de envío (varias por cliente), Saldo, Límite de crédito (depende del cliente, pero en ningún caso debe superar los 18.000 €), Descuento.</li>
+<li>Para cada pedido: número del pedido (único para cada cliente), dirección de envío y fecha del pedido.</li>
+<li>Además queremos saber el número de artículos de cada tipo que incluye cada pedido.</li>
+</ul>
+</li>
+<li>
+<p>Con ayuda de la profesor, obtendrás el modelo relacional que aprenderás a realizar un poco más adelante.</p>
+</li>
+<li>Crea la BD que resulta en Microsoft ACCESS eligiendo los tipos de datos y las restricciones.</li>
+<li>Introduce registros en cada una de las tablas.</li>
+<li>Inventa cinco consultas y ejecútalas.</li>
+<li>Para una de las consultas anteriores crea un formulario de tipo Tabular y modifica un poco su aspecto.</li>
+<li>Para la misma consulta que hayas elegido en el apartado anterior, crea un informe de Tipo Tabular y con todos los campos de la consulta.</li>
+</ul>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../U101/" class="btn btn-neutral float-left" title="Elementos de las BDs"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../U202/" class="btn btn-neutral float-right" title="M.relacional. Normalizacion">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../U101/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../U202/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme_extra.js" defer></script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

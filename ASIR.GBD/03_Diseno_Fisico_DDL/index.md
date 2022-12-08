@@ -1,4 +1,4 @@
-# CONSULTA DE BASES DE DATOS. LENGUAJE DE MANIPULACION DE DATOS
+# 03. DISEÑO FÍSICO. DDL
 
 ## Justificacion
 Conceptos básicos necesari
@@ -7,22 +7,26 @@ Conceptos básicos necesari
 1. Realizar del estudio...
 
 ## Criterios
-1. Se han identificado las herramientas y sentencias para realizar consultas.
-1. Se han realizado consultas simples sobre una tabla
-1. Se han realizado consultas que generan valores de resumen.
-1. Se han realizado consultas sobre el contenido de **varias tablas** mediante composiciones internas.
-1. Se han realizado consultas sobre el contenido de varias tablas mediante composiciones externas.
-1. Se han realizado consultas con subconsultas.
-1. Se han valorado las ventajas e inconvenientes de las distintas opciones válidas para llevar a cabo una consulta determinada
+1. Se han definido las estructuras físicas de almacenamiento.
+1. Se han creado tablas.
+1. Se han seleccionado los tipos de datos adecuados.
+1. Se han definido los campos clave en las tablas.
+1. Se han implantado todas las restricciones reflejadas en el diseño lógico.
+1. Se ha verificado mediante un conjunto de datos de prueba que la implementación se ajusta al modelo.
+1. Se ha definido y documentado el diccionario de datos.
+1. Se ha utilizado el lenguaje de definición de datos.
+1. Se ha definido y documentado el diccionario de datos.
 
 ## Contenidos Orden
- * El lenguaje de manipulación de datos para la realización de consultas. La sentencia SELECT.
- * Consultas simples, de resumen y agrupación.
- * Subconsultas.
- * Unión de consultas.
- * Composiciones internas y externas.
- * Asistentes y herramientas gráficas proporcionadas por el sistema gestor para la realización de consultas.
- * Ventajas e inconvenientes de las distintas opciones válidas para llevar a cabo una consulta determinada.
+  * El proceso de diseño físico, concepto y transición desde el diseño lógico. Estructuras físicas de almacenamiento.
+ * Herramientas gráficas proporcionadas por el sistema gestor para la implementación de la base de datos.
+ * SQL. Conceptos fundamentales.
+ * El lenguaje de definición de datos.
+ * Creación, modificación y eliminación de bases de datos.
+ * Creación, modificación y eliminación de tablas. Tipos de datos.
+ * Implementación de restricciones.
+ * Verificación del diseño, carga inicial y pruebas.
+ * Diccionario de datos, definición y documentación.
 
 ## Actividades
     3.4.1. Cuestiones (I)

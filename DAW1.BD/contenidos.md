@@ -1,6 +1,6 @@
 # Contenidos básicos:
 
-Los contenidos son el conjunto de conocimientos, habilidades, destrezas y actitudes que contribuyen al logro de los objetivos de cada etapa educativa y a la adquisición de competencias. Estos contenidos vienen detallados en la correspondiente normativa estatal y autonómica referente al título en cuestión. 
+Los contenidos son el conjunto de conocimientos, habilidades, destrezas y actitudes que contribuyen al logro de los objetivos de cada etapa educativa y a la adqauisición de competencias. Estos contenidos vienen detallados en la correspondiente normativa estatal y autonómica referente al título en cuestión. 
 
 Para el caso de Andalucía y para este módulo (Orden de 16 de junio de 2011):
 

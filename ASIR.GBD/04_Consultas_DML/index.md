@@ -1,10 +1,24 @@
 # 04. CONSULTA DE BASES DE DATOS. DML-I
 
 ## Justificacion
-Conceptos básicos necesari
+Este capítulo está dedicado a la creación de consultas de datos, utilizando asistentes de herramientas gráficas, así como el lenguaje de manipulación de datos SQL
 
 ## Objetivos
-1. Realizar del estudio...
+- Saber utiliza herramientas gráficas del gestor de la base de datos para la realización de consultas.
+- Saber usar un lenguaje de manipulación de datos (DML) para la realización de consultas.
+- Saber utilizar operadores, sentencia SELECT, selección y ordenación de registros, consultas de resumen.
+- Saber usar funciones de agregado, agrupación de registros, composiciones internas.
+- Saber utilizar subconsultas, ubicación anidadas y rendimiento de consultas.
+
+de
+
+subconsultas,
+
+subconsultas
+
+- Valorar el rendimiento de las consultas y saber mejorarlas para aumentar su rendimiento.
+
+- Y además, los objetivos TRANSVERSALES.
 
 ## Criterios
 1. Se han identificado las herramientas y sentencias para realizar consultas.
